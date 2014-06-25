@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout01"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="60"
+            android:focusable="true"
+            android:onClick="go"
+            android:text="Go somewhere" />
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="40"
+            android:focusable="true"
+            android:onClick="find"
+            android:text="Find place" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout02"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/shownearby"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="30"
+            android:focusable="true"
+            android:onClick="shownearby"
+            android:text="Nearby places" />
+
+        <Button
+            android:id="@+id/mapbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="70"
+            android:focusable="true"
+            android:onClick="mapbutton"
+            android:text="Map" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout03"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+    </LinearLayout>
+
+</LinearLayout>

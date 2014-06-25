@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_auto"
+        android:checkable="true"
+        android:orderInCategory="100"
+        android:title="@string/setting_auto_on"/>
+
+    <item
+        android:id="@+id/action_exit"
+        android:checkable="true"
+        android:orderInCategory="100"
+        android:title="@string/action_exit"/>
+
+</menu>

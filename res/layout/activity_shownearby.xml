@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/linearlayout01"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cafe_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:focusable="true"
+            android:onClick="cafe"
+            android:text="Cafe" />
+
+        <Button
+            android:id="@+id/pub_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:onClick="pub"
+            android:text="Pub" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/motel_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:onClick="motel"
+            android:text="Motel" />
+
+        <Button
+            android:id="@+id/hotel_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:focusable="true"
+            android:onClick="hotel"
+            android:text="Hotel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/gym_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:onClick="gym"
+            android:text="Gym" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout04"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/search_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="20"
+            android:hint="Custom search"
+            android:maxLines="1" >
+        </EditText>
+
+        <Button
+            android:id="@+id/nearbysearch_Button"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:focusable="true"
+            android:onClick="nearbysearch"
+            android:text="Search" />
+    </LinearLayout>
+
+</LinearLayout>
